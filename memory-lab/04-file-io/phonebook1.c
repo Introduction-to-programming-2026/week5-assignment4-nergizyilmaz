@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
@@ -9,8 +8,14 @@ int main(void)
         return 1;
     }
 
-    char *name = get_string("Name: ");
-    char *number = get_string("Number: ");
+    char name[100];
+    char number[100];
+
+    printf("Name: ");
+    scanf("%99s", name);
+
+    printf("Number: ");
+    scanf("%99s", number);
 
     fprintf(file, "%s,%s\n", name, number);
 

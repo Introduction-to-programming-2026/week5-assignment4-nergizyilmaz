@@ -1,6 +1,5 @@
-#include <cs50.h>
-#include <ctype.h>
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -12,7 +11,11 @@ int main(void)
 
     for (int i = 0; i < NUM_WORDS; i++)
     {
-        char *input = get_string("Enter word %i: ", i + 1);
+        char input[100];
+
+        printf("Enter word %i: ", i + 1);
+        scanf("%99s", input);
+
         words[i] = malloc(strlen(input) + 1);
 
         if (words[i] == NULL)

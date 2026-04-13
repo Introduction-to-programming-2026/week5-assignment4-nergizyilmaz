@@ -1,5 +1,5 @@
-2
-2
-2
-2
-2
+Hello
+Word
+Cs50
+Memory
+Lab

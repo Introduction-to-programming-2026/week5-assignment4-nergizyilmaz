@@ -3,7 +3,10 @@
 // Run this. Does x and y actually swap in main?
 //
 // TODO: Explain below why the swap doesn't work:
-// ANSWER: ...
+// ANSWER: The swap does not work because the function receives copies of x and y,
+// not the original variables. This is because C passes arguments by value.
+// Therefore, swapping a and b only changes local copies inside the function,
+// and does not affect x and y in main.
 //
 // Hint: When you call swap(x, y), does the function receive x and y
 //       themselves, or copies of their values?
